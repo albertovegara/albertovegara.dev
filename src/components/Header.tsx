@@ -27,6 +27,9 @@ export default function Header() {
         <span>alberto-vb.dev</span>
       </Link>
       <div className="flex items-center space-x-1">
+        <div className="min-w-[100px] grow font-mono mr-px">
+          vegara.belmonte.alberto@gmail.com
+        </div>
         {socialLinks.map((link) => {
           return link.name;
         })}
