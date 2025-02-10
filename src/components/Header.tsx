@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const socialLinks = [
   {
@@ -27,6 +30,7 @@ export default function Header() {
         {socialLinks.map((link) => {
           return link.name;
         })}
+        <ThemeToggle />
       </div>
     </nav>
   );
