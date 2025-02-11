@@ -1,19 +1,22 @@
 "use client";
 
+import Github from "@/icons/Github";
+import LinkedIn from "@/icons/LinkedIn";
 import Link from "next/link";
 import React from "react";
 import ThemeToggle from "./ThemeToggle";
+import { Button } from "./ui/button";
 
 const socialLinks = [
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/alberto-vb",
-    icon: "",
+    icon: LinkedIn,
   },
   {
     name: "GitHub",
     url: "https://github.com/alberto-vb",
-    icon: "",
+    icon: Github,
   },
 ];
 
@@ -31,7 +34,20 @@ export default function Header() {
           vegara.belmonte.alberto@gmail.com
         </div>
         {socialLinks.map((link) => {
-          return link.name;
+          // Destructure the icon component from the link object
+          const IconComponent = link.icon;
+          return (
+            <Link
+              key={link.name}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="ghost" size="icon">
+                <IconComponent className="inline-block" />
+              </Button>
+            </Link>
+          );
         })}
         <ThemeToggle />
       </div>
