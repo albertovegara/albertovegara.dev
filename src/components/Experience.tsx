@@ -21,8 +21,8 @@ const experience: Experience[] = [
     endDate: "Present",
   },
   {
-    company: "Altia S.L.",
-    companyUrl: "https://google.com",
+    company: "Altia S.A.",
+    companyUrl: "https://www.altia.es",
     position: "Software Engineer Intern",
     description:
       "I worked on the Google Cloud Platform team, where I was responsible for the development of the Kubernetes Engine API and the development of the GKE-on-GCE project.",
