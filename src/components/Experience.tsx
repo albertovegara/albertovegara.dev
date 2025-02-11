@@ -13,7 +13,7 @@ interface Experience {
 const experience: Experience[] = [
   {
     company: "Hypt",
-    companyUrl: "https://hypt.io",
+    companyUrl: "https://join-hypt.com/en/home/",
     position: "Back-end Engineer",
     description:
       "Development solutions for public administration using advanced technologies. In my role, I have improved development agility by implementing modern techniques, creating Typescript libraries for sharing utilities across projects, writing documentation and upgrading outdated projects to new technologies.",
