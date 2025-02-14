@@ -2,7 +2,19 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 
-export default function SocialLink({ link }) {
+export interface IconProps {
+  width?: number;
+  height?: number;
+  className?: string;
+}
+
+interface SocialLink {
+  name: string;
+  url: string;
+  icon: React.FC<IconProps>;
+}
+
+export default function SocialLink({ link }: { link: SocialLink }) {
   // Destructure the icon component from the link object
   const IconComponent = link.icon;
   return (

@@ -7,6 +7,18 @@ import React from "react";
 import ThemeToggle from "./ThemeToggle";
 import SocialLink from "./SocialLink";
 
+export interface IconProps {
+  width?: number;
+  height?: number;
+  className?: string;
+}
+
+interface SocialLink {
+  name: string;
+  url: string;
+  icon: React.FC<IconProps>;
+}
+
 const socialLinks = [
   {
     name: "LinkedIn",
