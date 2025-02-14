@@ -5,7 +5,7 @@ import LinkedIn from "@/icons/LinkedIn";
 import Link from "next/link";
 import React from "react";
 import ThemeToggle from "./ThemeToggle";
-import { Button } from "./ui/button";
+import SocialLink from "./SocialLink";
 
 const socialLinks = [
   {
@@ -35,22 +35,9 @@ export default function Header() {
             vegara.belmonte.alberto@gmail.com
           </div>
           <div className="flex items-center space-x-1">
-            {socialLinks.map((link) => {
-              // Destructure the icon component from the link object
-              const IconComponent = link.icon;
-              return (
-                <Link
-                  key={link.name}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button variant="ghost" size="icon">
-                    <IconComponent className="inline-block" />
-                  </Button>
-                </Link>
-              );
-            })}
+            {socialLinks.map((link) => (
+              <SocialLink key={link.name} link={link} />
+            ))}
             <ThemeToggle />
           </div>
         </div>
