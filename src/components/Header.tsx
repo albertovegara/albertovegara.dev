@@ -22,8 +22,8 @@ const socialLinks = [
 
 export default function Header() {
   return (
-    <nav className="container sticky top-0 z-50 mb-1 w-full max-w-4xl bg-neutral-100/80 py-4 backdrop-blur-md dark:bg-neutral-900/80">
-      <div className="grid grid-cols-1 space-y-1 md:flex md:items-center md:justify-between">
+    <nav className="sticky top-0 z-50 mb-1 w-full bg-neutral-100/80 py-4 backdrop-blur-md dark:bg-neutral-900/80">
+      <div className="max-w-4xl mx-auto px-4 grid grid-cols-1 space-y-1 md:flex md:items-center md:justify-between">
         <Link
           href="/"
           className="text-md flex items-center space-x-2 font-medium tracking-tight opacity-80 transition-opacity duration-150 hover:opacity-100"

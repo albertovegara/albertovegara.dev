@@ -35,9 +35,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="max-w-4xl mx-auto px-4 py-4 md:py-6 flex flex-col min-h-screen">
+          <main className="flex flex-col min-h-screen">
             <Header />
-            <div className="flex-1">{children}</div>
+            <div className="max-w-4xl mx-auto px-4 py-4 md:py-6 flex-1">
+              {children}
+            </div>
             <Footer />
           </main>
         </ThemeProvider>
