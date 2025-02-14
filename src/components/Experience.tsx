@@ -16,7 +16,7 @@ const experience: Experience[] = [
     companyUrl: "https://join-hypt.com/en/home/",
     position: "Back-end Engineer",
     description:
-      "Development solutions for public administration using advanced technologies. In my role, I have improved development agility by implementing modern techniques, creating Typescript libraries for sharing utilities across projects, writing documentation and upgrading outdated projects to new technologies.",
+      "Developed chatbot workflow solutions to create dynamic conversational experiences tailored for industries such as hospitality and insurance. Designed and implemented QA and CI/CD pipelines to streamline software delivery for the backend infrastructure.",
     startDate: "2023",
     endDate: "Present",
   },
@@ -25,7 +25,7 @@ const experience: Experience[] = [
     companyUrl: "https://www.altia.es",
     position: "Software Engineer Intern",
     description:
-      "I worked on the Google Cloud Platform team, where I was responsible for the development of the Kubernetes Engine API and the development of the GKE-on-GCE project.",
+      "Developed and maintained a microservice for the company's private portal using Java Spring Boot and PostgreSQL. Collaborated with the engineering team to improve system architecture, refactor code, and address bad practices to enhance maintainability and performance.",
     startDate: "2022",
     endDate: "2022",
   },
