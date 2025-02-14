@@ -11,15 +11,17 @@ interface Project {
   description: string;
   icon: string;
   url: string;
+  repository: string;
   technologies: Technology[];
 }
 
 const projects: Project[] = [
   {
     name: "alberto-vb.dev",
-    description: "🚀 My personal website.",
+    description: "🚀 The website you are looking at.",
     icon: "",
-    url: "https://alberto-vb.dev",
+    url: "https://alberto-vbdev.vercel.app",
+    repository: "https://github.com/alberto-vb/alberto-vb.dev",
     technologies: [
       {
         name: "Next.js",
@@ -33,10 +35,10 @@ const projects: Project[] = [
   },
   {
     name: "minGPT-interpretability",
-    description:
-      "Exploring transformer interpretability with activation patching.",
+    description: "🤖 Exploring transformer interpretability.",
     icon: "",
     url: "https://github.com/alberto-vb/minGPT-interpretability",
+    repository: "https://github.com/alberto-vb/minGPT-interpretability",
     technologies: [],
   },
   {
@@ -44,6 +46,7 @@ const projects: Project[] = [
     description: "🔗 An URL shortener.",
     icon: "",
     url: "https://github.com/alberto-vb/trim-link",
+    repository: "https://github.com/alberto-vb/trim-link",
     technologies: [],
   },
 ];
