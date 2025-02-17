@@ -12,7 +12,11 @@ export default function Home() {
             here! 👋
           </h1>
           <p className="text-lg leading-loose">
-            {`I'm`} a software engineer from Spain with 2 years of experience.
+            {`I'm`} a software engineer based in Alicante and working in
+            Valencia, with 2 years of experience crafting robust backend systems
+            and scalable applications. When {`I'm`} not coding, you can usually
+            find me running, lifting weights at the gym, or engaging in any
+            activity that keeps me moving
           </p>
         </article>
       </section>
