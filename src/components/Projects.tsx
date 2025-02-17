@@ -41,14 +41,6 @@ const projects: Project[] = [
     repository: "https://github.com/alberto-vb/minGPT-interpretability",
     technologies: [],
   },
-  {
-    name: "trim-link",
-    description: "🔗 An URL shortener.",
-    icon: "",
-    url: "https://github.com/alberto-vb/trim-link",
-    repository: "https://github.com/alberto-vb/trim-link",
-    technologies: [],
-  },
 ];
 
 export default function Projects() {
