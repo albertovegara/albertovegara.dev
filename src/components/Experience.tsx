@@ -5,7 +5,7 @@ interface Experience {
   company: string;
   companyUrl: string;
   position: string;
-  description: string;
+  description: string | string[];
   startDate: string;
   endDate: string;
 }
@@ -15,8 +15,11 @@ const experience: Experience[] = [
     company: "Hypt",
     companyUrl: "https://join-hypt.com/en/home/",
     position: "Back-end Engineer",
-    description:
-      "Developed chatbot workflow solutions to create dynamic conversational experiences tailored for industries such as hospitality and insurance. Designed and implemented QA and CI/CD pipelines to streamline software delivery for the backend infrastructure.",
+    description: [
+      "Led the development of a chatbot workflow system enabling customizable conversational experiences for industries like healthcare and insurance.",
+      "Designed and implemented robust CI/CD pipelines and QA processes to enhance deployment efficiency and code reliability.",
+      "Built a migration manager for Ory Identity, enabling smooth version transitions.",
+    ],
     startDate: "2023",
     endDate: "Present",
   },
@@ -66,9 +69,19 @@ export default function Experience() {
               </a>
             </div>
 
-            <p className="mt-3 text-pretty text-sm dark:text-neutral-400">
-              {experience.description}
-            </p>
+            <div className="mt-3 text-pretty text-sm dark:text-neutral-400">
+              {typeof experience.description === "string" ? (
+                <p>{experience.description}</p>
+              ) : Array.isArray(experience.description) ? (
+                <ul>
+                  {experience.description.map((description, index) => (
+                    <li key={index}>{description}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>No description provided.</p>
+              )}
+            </div>
           </li>
         ))}
       </ol>
