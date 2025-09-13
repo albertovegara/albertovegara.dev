@@ -17,11 +17,11 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "alberto-vb.dev",
+    name: "albertovegara.dev",
     description: "🚀 The website you are looking at.",
     icon: "",
-    url: "https://alberto-vbdev.vercel.app",
-    repository: "https://github.com/alberto-vb/alberto-vb.dev",
+    url: "https://albertovegaradev.vercel.app",
+    repository: "https://github.com/albertovegara/albertovegara.dev",
     technologies: [
       {
         name: "Next.js",
@@ -37,8 +37,8 @@ const projects: Project[] = [
     name: "minGPT-interpretability",
     description: "🤖 Exploring transformer interpretability.",
     icon: "",
-    url: "https://github.com/alberto-vb/minGPT-interpretability",
-    repository: "https://github.com/alberto-vb/minGPT-interpretability",
+    url: "https://github.com/albertovegara/minGPT-interpretability",
+    repository: "https://github.com/albertovegara/minGPT-interpretability",
     technologies: [],
   },
 ];

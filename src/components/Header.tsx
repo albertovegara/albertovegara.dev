@@ -22,12 +22,12 @@ interface SocialLink {
 const socialLinks = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/alberto-vb",
+    url: "https://www.linkedin.com/in/albertovegara",
     icon: LinkedIn,
   },
   {
     name: "GitHub",
-    url: "https://github.com/alberto-vb",
+    url: "https://github.com/albertovegara",
     icon: Github,
   },
 ];
@@ -40,7 +40,7 @@ export default function Header() {
           href="/"
           className="text-md flex items-center space-x-2 font-medium tracking-tight opacity-80 transition-opacity duration-150 hover:opacity-100"
         >
-          <span>alberto-vb.dev</span>
+          <span>albertovegara.dev</span>
         </Link>
         <div className="grid grid-cols-1 space-y-1 md:flex md:items-center md:space-x-1">
           <div className="min-w-[100px] grow font-mono mr-[2px]">
